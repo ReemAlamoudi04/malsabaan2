@@ -8,6 +8,7 @@
   "files": {
     ".gitignore": "18a34dc1a67c354b71ccc7784a33bfc7de5834cc5984be90793b6b14069e7e8f",
     ".streamlit/config.toml": "91adc874f6c2282bc1f55560569844d466fc78360698cc9ec006bd908aa23c17",
+    "COPY_NOTES.md": "eb4b220c9015155887783df1a852e1f5bb6f1da7db7b39131de91797a160b7b8",
     "DEPLOY_EACH_VERSION.md": "0e33ead6fff8fd6534dc1801961903e5aef5069a8aeb89eed6ed687ede10c0b7",
     "README.md": "fa0daf73f7dcc33145d0e6a58608af947bdcf4413ddd0368518d93461ee12a5e",
     "admin.py": "73a2e09e0b8bd0c095aab1a583fc0035e35bc23cf25a51915c838c8d513c9c9e",
@@ -24,7 +25,8 @@
     "website/assets/office-desk.jpg": "01b34089435ec3f214c3316a20487f1aeb52d0a823b2bb47d21ee3f07e63781d",
     "website/assets/reception.jpg": "53f8370fbdcbfb3c0383d3ac54bab70fd453e3e8f8dd488387d8ddfa08b2bbcb",
     "website/contact-config.js": "f1e23c0635851e483de7214db4bea01f8da4fb8c2a608ab822a6688d779f298a",
-    "website/index.html": "43d7086b5360bd398c3ebdddcd4c52894b44a584b51de21a1611e348e226f2c5",
+    "website/index.html": "772fe314f2ba226fd39c1be2a75645c34a21e06c31cc43bfd62846894dfd491e",
     "website/theme.css": "660801b872628e5eef843b1b7b8054d1831a3d0ed8fc3493d43b389146919ccb"
-  }
+  },
+  "copy_revision": "2026-10-31: bilingual editorial rewrite; headline and vision preserved"
 }

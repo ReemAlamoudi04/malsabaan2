@@ -1,6 +1,6 @@
 <!doctype html><html lang="ar" dir="rtl"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
 <title>محمد السبعان للمحاماة</title>
-<meta name="description" content="مكتب محمد السبعان للمحاماة والاستشارات القانونية في المملكة العربية السعودية. خدمات قانونية للشركات والأفراد.">
+<meta name="description" content="محمد السبعان للمحاماة والاستشارات القانونية. مشورة متأنية وتمثيل قانوني في المسائل التجارية والمدنية والأسرية بالمملكة العربية السعودية.">
 
 <link rel="icon" href="assets/logo-mark.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -451,7 +451,7 @@ h1,h2,h3{font-family:var(--display);font-weight:600;margin:0;text-wrap:balance;l
   <!-- AUDIENCE EXPLORER: one place, two ways to explore -->
   <section class="audience-explorer band" id="audience" aria-labelledby="audience-title">
     <div class="wrap">
-      <div class="audience-heading"><h2 class="h-sec" id="audience-title">كيف يمكننا مساعدتك؟</h2>
+      <div class="audience-heading"><h2 class="h-sec" id="audience-title">ما الذي تودّ أن تعهد به إلينا؟</h2>
         <div class="audience-tabs" role="tablist" aria-label="نوع الخدمات">
           <button type="button" role="tab" id="tab-corporate" aria-controls="corporate" aria-selected="true" tabindex="0" data-audience="corporate" data-i="corpLabel"></button>
           <button type="button" role="tab" id="tab-individuals" aria-controls="individuals" aria-selected="false" tabindex="-1" data-audience="individuals" data-i="indLabel"></button>
@@ -642,141 +642,491 @@ function svgIco(k){return '<svg viewBox="0 0 24 24">'+(P[k]||P.doc)+'</svg>'}
 
 /* ===== services ===== */
 var SVC=[
- {k:"scales",t:"corp",ar:["القضايا التجارية","منازعات التعاملات والشراكات والأوراق التجارية أمام المحاكم التجارية."],en:["Commercial disputes","Disputes over dealings, partnerships and negotiable instruments before the commercial courts."]},
- {k:"building",t:"corp",ar:["قضايا الشركات والمنشآت","منازعات الشركاء وحقوق الحصص والحوكمة وتأسيس الكيانات."],en:["Corporate & entities","Shareholder disputes, equity rights, governance, and entity formation."]},
- {k:"doc",t:"corp",ar:["صياغة ومراجعة العقود","إعداد العقود والاتفاقيات ومراجعتها بما يحفظ مركز الموكّل قبل التوقيع."],en:["Contracts","Drafting and reviewing contracts, agreements and MOUs to protect the client's position before signature."]},
- {k:"bank",t:"both",ar:["المنازعات المصرفية والتمويلية","منازعات التمويل والضمانات والمديونيات أمام اللجان المصرفية."],en:["Banking & finance","Financing, security and debt disputes before the banking committees."]},
- {k:"people",t:"both",ar:["القضايا العمالية","منازعات العمل للطرفين: المستحقات ومكافأة نهاية الخدمة والفصل."],en:["Labour","Employment disputes for either side: entitlements, end-of-service and dismissal."]},
- {k:"key",t:"both",ar:["التنفيذ وتحصيل المطالبات","تنفيذ الأحكام والسندات التنفيذية ومتابعة الإجراء حتى استيفاء الحق."],en:["Enforcement & collection","Enforcing judgments and instruments, and following the process through to recovery."]},
- {k:"home",t:"both",ar:["القضايا العقارية","منازعات الملكية والحدود والإيجار والمقاولات."],en:["Real estate","Ownership, boundary, lease and construction disputes."]},
- {k:"court",t:"both",ar:["القضايا العامة والمدنية","المطالبات والمنازعات المدنية، من دراسة الموقف إلى صدور الحكم."],en:["Civil claims","Civil claims between individuals and entities, from assessment to judgment."]},
- {k:"shield",t:"both",ar:["القضايا الجنائية","الدفاع والترافع أمام المحاكم الجزائية وجهات التحقيق."],en:["Criminal defence","Defence before the criminal courts and investigation authorities, at every stage."]},
- {k:"heart",t:"ind",ar:["قضايا الأحوال الشخصية","الطلاق والخلع والحضانة والزيارة والنفقة، بخصوصية تامة."],en:["Family law","Divorce, khul', custody, visitation and maintenance, handled in confidence."]},
- {k:"tree",t:"ind",ar:["التركات وقسمتها","حصر الورثة والتركة، والقسمة الرضائية، ودعاوى القسمة عند الخلاف."],en:["Estates & inheritance","Determining heirs and assets, amicable division, and partition claims where heirs disagree."]},
- {k:"hands",t:"both",ar:["التسويات والصلح","التفاوض وإنهاء النزاع بالصلح، وتوثيق التسوية بصيغة قابلة للتنفيذ."],en:["Settlement & mediation","Negotiating an end to the dispute and recording it in an enforceable form."]},
- {k:"chat",t:"both",ar:["الاستشارات القانونية","رأي نظامي مكتوب أو شفهي، مع بيان الخيارات وأثر كل منها."],en:["Legal opinions","A written or oral opinion setting out the options and what each one leads to."]},
- {k:"gavelless",t:"both",ar:["الترافع والتمثيل","تمثيل الموكّلين أمام المحاكم بدرجاتها وأمام اللجان المختصة."],en:["Litigation","Representation before the courts at every level and before the specialist committees."]},
- {k:"seal",t:"both",ar:["خدمات التوثيق","خدمات التوثيق للأفراد والشركات، بعناية بالمستندات ومتطلبات كل معاملة."],en:["Notarization services","Notarization services for individuals and companies, with careful attention to documents and each transaction’s requirements."]},
- {k:"home",t:"both",ar:["التسجيل العيني للعقار","خدمات التسجيل العيني للعقار ومتابعة المستندات والإجراءات المتعلقة بالتسجيل."],en:["Real estate title registration","Real estate title registration services and assistance with the related documents and procedures."]},
- {k:"dots",t:"both",ar:["أخرى","إذا لم تجد مسألتك أعلاه، تواصل معنا ونوضّح لك المسار المناسب."],en:["Other","If your matter isn't listed, contact us and we'll tell you the right route for it."]}
+  {
+    "k": "scales",
+    "t": "corp",
+    "ar": [
+      "المنازعات التجارية",
+      "قراءة دقيقة للعلاقة التجارية وما نشأ عنها من خلاف، وتمثيل في منازعات التعاملات والشراكات والأوراق التجارية."
+    ],
+    "en": [
+      "Commercial litigation",
+      "Careful consideration of the commercial relationship and the dispute behind it, with representation in trading, partnership and negotiable-instrument claims."
+    ]
+  },
+  {
+    "k": "building",
+    "t": "corp",
+    "ar": [
+      "شؤون الشركات والحوكمة",
+      "مشورة في حقوق الشركاء وعلاقاتهم، وتنظيم شؤون الكيان وحوكمته وتأسيسه، ومعالجة ما يتصل بذلك من منازعات."
+    ],
+    "en": [
+      "Corporate affairs & governance",
+      "Advice on shareholder rights and relationships, corporate governance and formation, with representation in related disputes."
+    ]
+  },
+  {
+    "k": "doc",
+    "t": "corp",
+    "ar": [
+      "العقود والاتفاقيات",
+      "صياغة تُبيّن المقصود، ومراجعة تتأنّى في الحقوق والالتزامات؛ لتكون الصورة القانونية حاضرة قبل التوقيع."
+    ],
+    "en": [
+      "Agreements & contract review",
+      "Drafting that makes intentions clear and review that examines rights and obligations, so the legal position is understood before signature."
+    ]
+  },
+  {
+    "k": "bank",
+    "t": "both",
+    "ar": [
+      "المسائل المصرفية والتمويل",
+      "دراسة الالتزامات التمويلية والضمانات والمديونيات، والتمثيل في منازعاتها أمام اللجان المصرفية المختصة."
+    ],
+    "en": [
+      "Banking & financing disputes",
+      "Assessment of financing obligations, security and indebtedness, with representation before the relevant banking committees."
+    ]
+  },
+  {
+    "k": "people",
+    "t": "both",
+    "ar": [
+      "علاقات العمل ومنازعاتها",
+      "مشورة وتمثيل في الحقوق الناشئة عن علاقة العمل، بما فيها المستحقات وإنهاء العلاقة ومكافأة نهاية الخدمة."
+    ],
+    "en": [
+      "Employment relationships",
+      "Advice and representation on rights arising from employment, including entitlements, termination and end-of-service benefits."
+    ]
+  },
+  {
+    "k": "key",
+    "t": "both",
+    "ar": [
+      "إجراءات التنفيذ واستيفاء الحقوق",
+      "متابعة الأحكام والسندات التنفيذية والمطالبات المالية، بعناية بالمستندات والإجراءات اللازمة للسعي إلى استيفاء الحق."
+    ],
+    "en": [
+      "Enforcement & recovery",
+      "Following judgments, enforceable instruments and financial claims, with attention to the documents and procedures needed to pursue recovery."
+    ]
+  },
+  {
+    "k": "home",
+    "t": "both",
+    "ar": [
+      "الملكية والمنازعات العقارية",
+      "معالجة المسائل المتصلة بالملكية والحدود والإيجارات والمقاولات، انطلاقاً من قراءة المستندات ومراكز الأطراف."
+    ],
+    "en": [
+      "Property rights & disputes",
+      "Advice and representation on ownership, boundaries, leases and construction disputes, informed by the documents and each party’s position."
+    ]
+  },
+  {
+    "k": "court",
+    "t": "both",
+    "ar": [
+      "المطالبات المدنية",
+      "دراسة الحقوق والالتزامات محلّ الخلاف، وبناء الموقف القانوني وتمثيله أمام الجهات القضائية في المسائل المدنية."
+    ],
+    "en": [
+      "Civil rights & claims",
+      "Examining disputed rights and obligations, developing the legal position and representing it before the courts in civil matters."
+    ]
+  },
+  {
+    "k": "shield",
+    "t": "both",
+    "ar": [
+      "التمثيل في القضايا الجزائية",
+      "دراسة وقائع المسألة ومستنداتها، وتقديم الدفاع والتمثيل أمام جهات التحقيق والمحاكم الجزائية."
+    ],
+    "en": [
+      "Criminal representation",
+      "Review of the facts and documents, with defence and representation before investigation authorities and the criminal courts."
+    ]
+  },
+  {
+    "k": "heart",
+    "t": "ind",
+    "ar": [
+      "شؤون الأسرة",
+      "تناول مسائل الطلاق والخلع والحضانة والزيارة والنفقة بخصوصية، وعناية بما تحمله من أثر على الأسرة."
+    ],
+    "en": [
+      "Family & personal status",
+      "Advice and representation on divorce, khul’, custody, visitation and maintenance, with respect for privacy and the effect on the family."
+    ]
+  },
+  {
+    "k": "tree",
+    "t": "ind",
+    "ar": [
+      "التركات وحقوق الورثة",
+      "العناية بإجراءات حصر الورثة وأموال التركة، وتنظيم قسمتها بالتراضي أو متابعة دعاوى القسمة عند تعذّر الاتفاق."
+    ],
+    "en": [
+      "Inheritance & estate division",
+      "Attention to identifying heirs and estate assets, arranging an agreed division or pursuing partition proceedings where agreement is not reached."
+    ]
+  },
+  {
+    "k": "hands",
+    "t": "both",
+    "ar": [
+      "التفاوض والتسويات",
+      "بحث إمكانات الاتفاق وتسوية الخلاف، وصياغة ما يتوصّل إليه الأطراف بعناية بحجيّته وقابليته للتنفيذ."
+    ],
+    "en": [
+      "Negotiation & resolution",
+      "Exploring the scope for agreement and documenting settlements with attention to their legal effect and enforceability."
+    ]
+  },
+  {
+    "k": "chat",
+    "t": "both",
+    "ar": [
+      "الرأي والمشورة القانونية",
+      "رأي شفهي أو مكتوب ينطلق من وقائع المسألة، ويضع البدائل وآثارها النظامية أمامك بصورة مفهومة."
+    ],
+    "en": [
+      "Legal advice & opinions",
+      "Oral or written advice grounded in the facts, setting out the available alternatives and their legal implications in clear terms."
+    ]
+  },
+  {
+    "k": "gavelless",
+    "t": "both",
+    "ar": [
+      "التقاضي والتمثيل القضائي",
+      "إعداد الموقف القانوني وعرضه أمام المحاكم بمختلف درجاتها واللجان المختصة، وفقاً لطبيعة كل نزاع."
+    ],
+    "en": [
+      "Court & tribunal representation",
+      "Preparing and presenting the legal position before courts at their various levels and specialist committees, according to the dispute."
+    ]
+  },
+  {
+    "k": "seal",
+    "t": "both",
+    "ar": [
+      "توثيق المعاملات",
+      "العناية بمستندات معاملات الأفراد والمنشآت ومتطلبات توثيقها، وفقاً لما تقتضيه طبيعة الإجراء."
+    ],
+    "en": [
+      "Transaction notarisation",
+      "Careful attention to the documents and notarisation requirements of individual and business transactions."
+    ]
+  },
+  {
+    "k": "home",
+    "t": "both",
+    "ar": [
+      "تسجيل الحقوق العقارية",
+      "متابعة مستندات التسجيل العيني للعقار وإجراءاته، بعناية بالبيانات التي يقوم عليها السجل."
+    ],
+    "en": [
+      "Real estate registration",
+      "Assistance with the documents and procedures for real estate title registration, with attention to the information supporting the register."
+    ]
+  },
+  {
+    "k": "dots",
+    "t": "both",
+    "ar": [
+      "مسألة أخرى",
+      "قد لا يختصر عنوانٌ واحد مسألتك. عرّفنا بطبيعتها لنبيّن مدى ارتباطها بنطاق ممارستنا."
+    ],
+    "en": [
+      "A different matter",
+      "Your concern may not fit a single heading. Tell us about it so we can clarify whether it falls within our practice."
+    ]
+  }
 ];
 
-/* ===== copy ===== */
+/* ===== Bilingual editorial copy ===== */
 var T={
-ar:{
- dir:"rtl",langBtn:"EN",
- brandShort:"محمد السبعان للمحاماة",
- brandFull:"محمد السبعان للمحاماة والاستشارات القانونية",
- navAbout:"عن المكتب",navSvc:"خدماتنا",navVal:"قيمنا",navCred:"التراخيص",navContact:"تواصل معنا",
- heroH:"حين تتعقّد المسائل، يبدأ الوضوح.",
- heroSub:"مرافعة واستشارات أمام المحاكم واللجان، بمعرفة دقيقة بالأنظمة السعودية.",
- ctaPrimary:"اطلب استشارة",ctaSecondary:"تصفّح الخدمات",scrollCue:"تصفّح",
- aboutEyebrow:"عن المكتب",aboutH:"خبرة نظامية تقرأ المسألة في سياقها",
- aboutP1:"مكتب المحامي محمد السبعان مكتب مهني سعودي، يمثّل موكّليه أمام الجهات القضائية وشبه القضائية، ويقدّم لهم المشورة النظامية في مسائلهم التجارية والمدنية والأسرية.",
- aboutP2:"نبدأ من دراسة الموقف النظامي للموكّل قبل اتخاذ أي إجراء، ليكون القرار مبنيًّا على تقدير واضح للمسار ونتائجه، لا على افتراض.",
- aboutAlt:"استقبال المكتب بهوية محمد السبعان",
- corpAlt:"مكتب محمد السبعان للمحاماة",
- indAlt:"مكتب المحامي وقلم فوق مذكرة، وميزان العدل في الخلفية",
- svcEyebrow:"خدماتنا القانونية",svcH:"خدمات متكاملة للشركات والأفراد",
- svcLede:"من الاستشارة الأولى إلى التمثيل أمام الجهات القضائية.",
- chipAll:"الكل",chipCorp:"الشركات",chipInd:"الأفراد",cardMore:"تفاصيل",
- corpLabel:"للشركات",corpH:"القانون جزء من قرارك التجاري",
- corpBody:"نساند الشركات والمنشآت في منازعاتها وعقودها وقراراتها النظامية، ونمثّلها أمام الجهات القضائية واللجان المختصة.",
- corpCta:"خدمات الشركات",
- corpList:["منازعات الشركاء وحقوق الحصص","الحوكمة وتنظيم العلاقة داخل المنشأة","تأسيس الكيانات والتراخيص","الاستشارات النظامية المستمرة"],
- indLabel:"للأفراد",indH:"قضاياك الشخصية تستحق العناية نفسها",
- indBody:"نمثّل الأفراد ونقدّم لهم المشورة في المسائل التي تمسّ أسرهم وممتلكاتهم وحقوقهم، بالخصوصية والجديّة نفسها.",
- indList:["قضايا الأحوال الشخصية","التركات وقسمتها","القضايا العقارية","التنفيذ وتحصيل المطالبات","القضايا الجنائية"],
- valEyebrow:"قيمنا",valH:"ثلاثة التزامات تحكم طريقة عملنا",
- vals:[["٠١","السرية","ما يصلنا من موكّلينا أمانة، نتعامل معه بسرية تامة في كل مرحلة."],
-       ["٠٢","الخبرة","معرفة دقيقة بالأنظمة والبيئة القضائية في المملكة، ومنهج عمل منضبط."],
-       ["٠٣","الوضوح","نبيّن المسار واحتمالاته منذ اللقاء الأول، دون وعود."]],
- visionLabel:"رؤيتنا",visionLine:"أن نكون المرجع القانوني الموثوق لعملائنا، بما نقدّمه من خبرة متخصصة وحلول متكاملة تحفظ حقوقهم وتصون مصالحهم. نلتزم بمعايير مهنية راسخة تستند إلى أحكام الشريعة الإسلامية وتواكب أحدث الأنظمة والتشريعات، لنكون شريكًا في نجاح أعمالهم واستدامتها.",
- visionAlt:"استقبال مكتب محمد السبعان وشعار المكتب",
- credEyebrow:"التراخيص والاعتمادات",credH:"التراخيص والاعتمادات المهنية",
- credLede:"تُضاف أرقام التراخيص والاعتمادات بعد اعتماد بيانات المكتب الرسمية.",
- creds:[["badge","ترخيص محاماة رقم —","وزارة العدل"],
-        ["seal","عضوية الهيئة السعودية للمحامين رقم —","الهيئة السعودية للمحامين"],
-        ["seal","ترخيص توثيق رقم —","رقم الترخيص يضاف لاحقًا"],
-        ["home","ترخيص مسجل عيني للعقار رقم —","رقم الترخيص يضاف لاحقًا"]],
- formEyebrow:"اطلب استشارة",formH:"ابدأ بموقف نظامي واضح",
- formLede:"شاركنا تفاصيل طلبك باختصار، وحدّد المجال الأقرب إليه.",
- fName:"الاسم",fMobile:"رقم الجوال",fEmail:"البريد الإلكتروني (اختياري)",fService:"نوع الخدمة",
- fDetails:"نبذة عن الطلب",fConsent:"أوافق على حفظ تفاصيل طلبي لدى المكتب ومشاركتها عبر واتساب للتواصل بشأن الاستشارة.",
- fSubmit:"متابعة عبر واتساب",fPick:"اختر المجال",
- fNote:"ستفتح محادثة واتساب لمراجعة طلبك وإرساله. يُحفظ الطلب لدى المكتب للمتابعة.",
- eName:"اكتب اسمك",eMobile:"اكتب رقم جوال صحيحًا، مثل 05XXXXXXXX",eEmail:"اكتب بريدًا إلكترونيًا صحيحًا",
- eService:"اختر المجال الأقرب لطلبك",eConsent:"الموافقة مطلوبة لإرسال الطلب",
- ok:"راجع طلبك وأرسله في واتساب. إذا لم تُفتح المحادثة، استخدم الرابط أدناه.",
- no:"تعذّر إرسال الطلب. تواصل معنا عبر واتساب.",
- contactEyebrow:"تواصل معنا",contactH:"المكتب في خدمتك",
- rowPhone:"الهاتف",rowWhats:"راسلنا على واتساب",rowEmail:"البريد الإلكتروني",
- rowLocation:"موقع المكتب — الاتجاهات",rowHours:"ساعات العمل",
- hours:"الأحد – الخميس، ٩ صباحًا – ٥ مساءً",copy:"نسخ",copied:"تم النسخ",
- footTag:"مكتب مهني سعودي للمحاماة والاستشارات القانونية، يخدم الأفراد والشركات.",
- footCol1:"خدماتنا القانونية",footCol2:"التواصل",footCol3:"الموقع",
- legal:"© ٢٠٢٦ مكتب المحامي محمد السبعان للمحاماة والاستشارات القانونية. جميع الحقوق محفوظة.",
- disclaimer:"ما يرد في هذا الموقع للتعريف بالمكتب ولا يعدّ استشارة قانونية.",
- mbarWhats:"اطلب استشارة",mbarCall:"تواصل معنا",
- waText:"هلابك في مكتب محمد السبعان للأستشارات القانونية\nكيف اقدر اساعدك",mapOpen:"افتح الموقع في خرائط Google",videoPause:"إيقاف الفيديو",videoPlay:"تشغيل الفيديو"
-},
-en:{
- dir:"ltr",langBtn:"ع",
- brandShort:"Mohammed Al Sabaan",
- brandFull:"Mohammed Al-Sabaan Law Firm & Legal Consultancy",
- navAbout:"The firm",navSvc:"Practice areas",navVal:"Values",navCred:"Licences",navContact:"Contact",
- heroH:"When matters get complex, clarity begins.",
- heroSub:"Representation and advice before the Saudi courts and committees, grounded in the regulations as they are applied.",
- ctaPrimary:"Request a consultation",ctaSecondary:"Our practice areas",scrollCue:"Scroll",
- aboutEyebrow:"The firm",aboutH:"Legal experience that reads the matter in context",
- aboutP1:"Mohammed Al-Sabaan Law Firm is a Saudi professional practice. It represents clients before the courts and quasi-judicial committees, and advises them on commercial, civil and family matters.",
- aboutP2:"We start by establishing where the client actually stands under the regulations, before any step is taken — so the decision rests on a clear reading of the route and its likely outcome rather than on assumption.",
- aboutAlt:"The reception with Mohammed Al Sabaan branding",
- corpAlt:"Mohammed Al Sabaan law office desk",
- indAlt:"A fountain pen resting on a memorandum, scales of justice behind",
- svcEyebrow:"Our legal services",svcH:"Full-service advice for companies and individuals",
- svcLede:"From the first consultation to judgment.",
- chipAll:"All",chipCorp:"Corporate",chipInd:"Individuals",cardMore:"Details",
- corpLabel:"For companies",corpH:"Law belongs in the commercial decision",
- corpBody:"We support companies in their disputes, their contracts and their regulatory decisions, and represent them before the courts and the specialist committees.",
- corpCta:"Corporate services",
- corpList:["Shareholder disputes and equity rights","Governance and internal relations","Entity formation and licensing","Ongoing regulatory advice"],
- indLabel:"For individuals",indH:"Your personal matters get the same care",
- indBody:"We represent and advise individuals on the matters that touch their families, their property and their rights — with the same confidentiality and seriousness.",
- indList:["Family law","Estates & inheritance","Real estate","Enforcement & collection","Criminal defence"],
- valEyebrow:"Our values",valH:"Three commitments that govern how we work",
- vals:[["01","Confidentiality","What a client tells us is held in trust, at every stage of the matter."],
-       ["02","Experience","Close knowledge of the regulations and of how they are applied in practice in the Kingdom."],
-       ["03","Clarity","We set out the route and its likely outcomes from the first meeting — without promises."]],
- visionLabel:"Our vision",visionLine:"To be the trusted legal authority for our clients, delivering specialized expertise and integrated solutions that protect their rights and safeguard their interests. We uphold the highest professional standards, grounded in Islamic Shari’ah and aligned with the latest laws and regulations, to serve as a partner in the success and sustainability of their business.",
- visionAlt:"Reception and branding of Mohammed Al Sabaan law office",
- credEyebrow:"Licences & accreditations",credH:"Professional licences & accreditations",
- credLede:"Licence and membership numbers will be added once the firm’s official details are confirmed.",
- creds:[["badge","Practising licence no. —","Ministry of Justice"],
-        ["seal","Saudi Bar Association membership no. —","Saudi Bar Association"],
-        ["seal","Notarization licence no. —","Licence number pending"],
-        ["home","Real estate title registrar licence no. —","Licence number pending"]],
- formEyebrow:"Request a consultation",formH:"Start from a clear legal position",
- formLede:"Tell us briefly what you need and pick the closest area.",
- fName:"Full name",fMobile:"Mobile number",fEmail:"Email (optional)",fService:"Type of matter",
- fDetails:"Brief description",fConsent:"I agree to the office storing my request and sharing these details through WhatsApp for this consultation.",
- fSubmit:"Continue on WhatsApp",fPick:"Choose an area",
- fNote:"WhatsApp opens so you can review and send your request. Your request is saved by the office for follow-up.",
- eName:"Enter your name",eMobile:"Enter a valid Saudi mobile number",eEmail:"Enter a valid email address",
- eService:"Choose the closest area",eConsent:"Consent is required to submit",
- ok:"Review and send your request in WhatsApp. If the chat did not open, use the link below.",
- no:"We couldn't send your request — please reach us on WhatsApp.",
- contactEyebrow:"Contact us",contactH:"The firm is at your service",
- rowPhone:"Phone",rowWhats:"Message us on WhatsApp",rowEmail:"Email",
- rowLocation:"Office location — Directions",rowHours:"Working hours",
- hours:"Sunday–Thursday, 9am–5pm",copy:"Copy",copied:"Copied",
- footTag:"A Saudi law and legal consultancy practice serving individuals and companies.",
- footCol1:"Our services",footCol2:"Contact",footCol3:"Location",
- legal:"© 2026 Mohammed Al-Sabaan Law Firm & Legal Consultancy. All rights reserved.",
- disclaimer:"This site is introductory and does not constitute legal advice.",
- mbarWhats:"Consultation",mbarCall:"Contact",
- waText:"Welcome to Mohammed alsabaan law office\nhow can i assist you",mapOpen:"Open in Google Maps",videoPause:"Pause video",videoPlay:"Play video"
-}};
+  "ar": {
+    "dir": "rtl",
+    "langBtn": "EN",
+    "brandShort": "محمد السبعان للمحاماة",
+    "brandFull": "محمد السبعان للمحاماة والاستشارات القانونية",
+    "navAbout": "المكتب",
+    "navSvc": "مجالات الممارسة",
+    "navVal": "نهجنا",
+    "navCred": "الصفة المهنية",
+    "navContact": "للتواصل",
+    "heroH": "حين تتعقّد المسائل، يبدأ الوضوح.",
+    "heroSub": "مشورة متأنية وتمثيل قانوني رصين، للشؤون التي تمسّ أعمالك وحقوقك ومستقبلك.",
+    "ctaPrimary": "ناقش مسألتك معنا",
+    "ctaSecondary": "اكتشف مجالات الممارسة",
+    "scrollCue": "اكتشف المكتب",
+    "aboutEyebrow": "من نحن",
+    "aboutH": "مصالحك، في صميم كل قرار.",
+    "aboutP1": "ثمة مسائل لا تحتمل قراءة عابرة. في مكتب محمد السبعان، ننظر إلى ما وراء السؤال القانوني: سياقه، وأثره، وما يعنيه لصاحبه. نقدّم المشورة والتمثيل في المسائل التجارية والمدنية والأسرية، ضمن الإطار النظامي السعودي.",
+    "aboutP2": "نقرأ الوقائع، ونوازن البدائل، ونضع أمامك رأياً مدروساً بلغة مباشرة. عناية بالتفاصيل منذ البداية، واحترام للمصالح التي تضعها بين أيدينا.",
+    "aboutAlt": "مساحة الاستقبال في مكتب محمد السبعان للمحاماة",
+    "corpAlt": "تفاصيل طاولة العمل في مكتب محمد السبعان",
+    "indAlt": "مستندات وقلم وميزان في مساحة العمل بالمكتب",
+    "svcEyebrow": "ممارساتنا",
+    "svcH": "لكل مسألة، عنايتها القانونية.",
+    "svcLede": "تتنوّع المسائل، ويبقى الأساس واحداً: فهم دقيق للوقائع، ورأي مدروس، وتمثيل يراعي مصالح الموكّل.",
+    "chipAll": "جميع المجالات",
+    "chipCorp": "قطاع الأعمال",
+    "chipInd": "الشؤون الشخصية",
+    "cardMore": "نطاق الخدمة",
+    "corpLabel": "قطاع الأعمال",
+    "corpH": "قرارات اليوم تصوغ أعمال الغد.",
+    "corpBody": "خلف كل شراكة وعقد وقرار تجاري مصالح تستحقّ دراسة متأنية. نساند منشأتك في ترتيب شؤونها القانونية ومعالجة منازعاتها، مع مراعاة ما يقتضيه عملها من استقرار واستمرارية.",
+    "corpCta": "استكشف الدعم القانوني لأعمالك",
+    "corpList": [
+      "حقوق الشركاء ومعالجة خلافاتهم",
+      "حوكمة المنشأة وعلاقاتها الداخلية",
+      "تأسيس الكيانات واستكمال تراخيصها",
+      "مشورة نظامية تواكب قرارات الإدارة"
+    ],
+    "indLabel": "الشؤون الشخصية",
+    "indH": "ما يخصّك، نوليه عناية خاصة.",
+    "indBody": "بعض المسائل تتجاوز أوراقها؛ فهي تمسّ أسرة، أو ملكية، أو حقاً يعني لك الكثير. نتناولها بإنصات واحترام، ونقدّم المشورة والتمثيل بما يراعي خصوصيتها وأثرها في حياتك.",
+    "indList": [
+      "شؤون الأسرة وحقوق أفرادها",
+      "التركات وتنظيم قسمتها",
+      "الملكية العقارية وما يتصل بها من نزاعات",
+      "متابعة التنفيذ والمطالبات المالية",
+      "الدفاع في المسائل الجزائية"
+    ],
+    "valEyebrow": "منهج المكتب",
+    "valH": "الثقة، كما نمارسها.",
+    "vals": [
+      [
+        "٠١",
+        "حفظ الأمانة",
+        "نُولي معلومات الموكّل ومستنداته ما تستحقّه من حرص، ونتعامل مع خصوصيته بوصفها جزءاً أصيلاً من العمل المهني."
+      ],
+      [
+        "٠٢",
+        "دقّة النظر",
+        "نقرأ المستندات في سياق الوقائع والأنظمة ذات الصلة. فالتفصيل الذي يستحقّ التوقّف عنده قد يغيّر وجهة الرأي."
+      ],
+      [
+        "٠٣",
+        "صراحة المشورة",
+        "نعرض البدائل وحدودها بلغة مفهومة، ونميّز بين ما يمكن السعي إليه وما لا يصحّ الجزم به."
+      ]
+    ],
+    "visionLabel": "رؤيتنا",
+    "visionLine": "أن نكون المرجع القانوني الموثوق لعملائنا، بما نقدّمه من خبرة متخصصة وحلول متكاملة تحفظ حقوقهم وتصون مصالحهم. نلتزم بمعايير مهنية راسخة تستند إلى أحكام الشريعة الإسلامية وتواكب أحدث الأنظمة والتشريعات، لنكون شريكًا في نجاح أعمالهم واستدامتها.",
+    "visionAlt": "استقبال مكتب محمد السبعان وشعار المكتب",
+    "credEyebrow": "البيانات المهنية",
+    "credH": "هوية مهنية قابلة للتحقّق.",
+    "credLede": "تُعرض بيانات التراخيص والعضويات بعد التحقّق من مستنداتها واعتمادها للنشر.",
+    "creds": [
+      [
+        "badge",
+        "ترخيص مزاولة المحاماة —",
+        "وزارة العدل · رقم الترخيص قيد الاعتماد للنشر"
+      ],
+      [
+        "seal",
+        "عضوية الهيئة السعودية للمحامين —",
+        "رقم العضوية قيد الاعتماد للنشر"
+      ],
+      [
+        "seal",
+        "ترخيص أعمال التوثيق —",
+        "بيانات الترخيص قيد الاعتماد للنشر"
+      ],
+      [
+        "home",
+        "ترخيص المسجّل العيني للعقار —",
+        "بيانات الترخيص قيد الاعتماد للنشر"
+      ]
+    ],
+    "formEyebrow": "بداية التواصل",
+    "formH": "لكل مسألة، بداية تستحقّ الإنصات.",
+    "formLede": "عرّفنا بمسألتك في كلمات. أضف بيانات التواصل والمجال المناسب، ثم راجع رسالتك في واتساب قبل إرسالها.",
+    "fName": "الاسم الكامل",
+    "fMobile": "الجوال للتواصل",
+    "fEmail": "بريدك الإلكتروني (غير إلزامي)",
+    "fService": "مجال المسألة",
+    "fDetails": "ما الذي تودّ مناقشته؟",
+    "fConsent": "أوافق على حفظ بيانات هذا الطلب لدى المكتب، ونقلها إلى واتساب للتواصل بشأنه.",
+    "fSubmit": "راجع رسالتك في واتساب",
+    "fPick": "حدّد المجال المناسب",
+    "fNote": "يُحفظ الطلب لدى المكتب، ثم تفتح رسالة واتساب لتراجعها وترسلها بنفسك. تقديم الطلب لا يُنشئ علاقة محاماة.",
+    "eName": "أضف اسمك الكامل للمتابعة.",
+    "eMobile": "أدخل رقم جوال سعودي صحيحاً يبدأ بـ 05 أو +9665.",
+    "eEmail": "تحقّق من صيغة البريد، أو اترك هذا الحقل فارغاً.",
+    "eService": "حدّد مجال المسألة قبل المتابعة.",
+    "eConsent": "يلزم قبول حفظ البيانات ونقلها إلى واتساب للمتابعة.",
+    "ok": "رسالتك جاهزة للمراجعة في واتساب. إن لم تظهر المحادثة، افتحها من الرابط أدناه.",
+    "no": "لم تكتمل المتابعة. حاول مجدداً أو استخدم وسيلة أخرى من بيانات التواصل.",
+    "contactEyebrow": "قنوات التواصل",
+    "contactH": "يسعدنا أن نسمع منك.",
+    "rowPhone": "للاتصال بالمكتب",
+    "rowWhats": "المحادثة عبر واتساب",
+    "rowEmail": "للمراسلات الإلكترونية",
+    "rowLocation": "عنوان المكتب والوصول إليه",
+    "rowHours": "مواعيد استقبال التواصل",
+    "hours": "الأحد – الخميس، ٩ صباحًا – ٥ مساءً",
+    "copy": "انسخ الرقم",
+    "copied": "نُسخ الرقم",
+    "footTag": "محمد السبعان للمحاماة والاستشارات القانونية. رأي متأنٍّ، وعناية بما تعهد به إلينا.",
+    "footCol1": "نطاق الممارسة",
+    "footCol2": "تواصل مع المكتب",
+    "footCol3": "الوصول إلينا",
+    "legal": "© ٢٠٢٦ محمد السبعان للمحاماة والاستشارات القانونية. حقوق النشر محفوظة.",
+    "disclaimer": "المحتوى للتعريف بالخدمات، وليس رأياً قانونياً في واقعة بعينها. التواصل الأولي لا يُنشئ علاقة محاماة.",
+    "mbarWhats": "ناقش مسألتك",
+    "mbarCall": "اتصل بالمكتب",
+    "waText": "السلام عليكم، أرغب في مناقشة مسألة قانونية مع مكتب محمد السبعان.",
+    "mapOpen": "خطّط لزيارتك عبر خرائط Google",
+    "videoPause": "أوقف عرض الفيديو",
+    "videoPlay": "استأنف عرض الفيديو"
+  },
+  "en": {
+    "dir": "ltr",
+    "langBtn": "ع",
+    "brandShort": "Mohammed Al Sabaan",
+    "brandFull": "Mohammed Al-Sabaan Law Firm & Legal Consultancy",
+    "navAbout": "Our practice",
+    "navSvc": "Expertise",
+    "navVal": "Our approach",
+    "navCred": "Professional details",
+    "navContact": "Get in touch",
+    "heroH": "When matters get complex, clarity begins.",
+    "heroSub": "Considered advice and measured representation for the matters that shape your business, your rights and your future.",
+    "ctaPrimary": "Discuss your matter",
+    "ctaSecondary": "Explore our expertise",
+    "scrollCue": "Discover the practice",
+    "aboutEyebrow": "Who we are",
+    "aboutH": "Your interests. Our point of reference.",
+    "aboutP1": "Some matters deserve more than a passing assessment. At Mohammed Al Sabaan, we consider the context behind a legal question, its consequences and the person it concerns. Our practice advises and represents clients in commercial, civil and family matters under Saudi law.",
+    "aboutP2": "We examine the facts, weigh the alternatives and offer a considered view in direct language. Attention to detail from the outset. Respect for the interests you place in our care.",
+    "aboutAlt": "The reception area at Mohammed Al Sabaan Law Firm",
+    "corpAlt": "A close view of the working desk at the firm",
+    "indAlt": "Documents, a pen and scales in the office workspace",
+    "svcEyebrow": "What we do",
+    "svcH": "The attention each matter deserves.",
+    "svcLede": "Different matters. A consistent discipline: understand the facts, consider the law and represent the interests entrusted to us.",
+    "chipAll": "All expertise",
+    "chipCorp": "Business matters",
+    "chipInd": "Personal matters",
+    "cardMore": "Service overview",
+    "corpLabel": "For business",
+    "corpH": "Today’s decisions shape tomorrow’s business.",
+    "corpBody": "Every partnership, agreement and commercial decision carries interests worth examining carefully. We advise on the legal affairs of your business and represent it in disputes, with its continuity and commercial priorities in view.",
+    "corpCta": "Explore counsel for your business",
+    "corpList": [
+      "Shareholder rights and disagreements",
+      "Governance and internal business relationships",
+      "Company formation and licensing requirements",
+      "Regulatory advice for management decisions"
+    ],
+    "indLabel": "For you",
+    "indH": "Personal matters. Considered care.",
+    "indBody": "A legal matter can mean more than the documents before us. It may concern your family, your property or a right that matters deeply to you. We listen with respect and provide advice and representation with regard for its personal significance.",
+    "indList": [
+      "Family affairs and individual rights",
+      "Estates and the division of inheritance",
+      "Property ownership and related disputes",
+      "Enforcement and financial claims",
+      "Representation in criminal matters"
+    ],
+    "valEyebrow": "How we work",
+    "valH": "The substance of trust.",
+    "vals": [
+      [
+        "01",
+        "Discretion",
+        "We treat client information and documents with care. Respect for privacy is part of the professional responsibility entrusted to us."
+      ],
+      [
+        "02",
+        "Discernment",
+        "We read the documents alongside the facts and relevant law. A detail worth examining can change the direction of the advice."
+      ],
+      [
+        "03",
+        "Candour",
+        "We explain the alternatives and their limits in plain language, distinguishing what can be pursued from what cannot be assured."
+      ]
+    ],
+    "visionLabel": "Our vision",
+    "visionLine": "To be the trusted legal authority for our clients, delivering specialized expertise and integrated solutions that protect their rights and safeguard their interests. We uphold the highest professional standards, grounded in Islamic Shari’ah and aligned with the latest laws and regulations, to serve as a partner in the success and sustainability of their business.",
+    "visionAlt": "Reception and branding of Mohammed Al Sabaan law office",
+    "credEyebrow": "Practice information",
+    "credH": "Professional standing, documented.",
+    "credLede": "Licence and membership details are published after the supporting records have been verified and approved for release.",
+    "creds": [
+      [
+        "badge",
+        "Legal practice licence —",
+        "Ministry of Justice · Number pending publication approval"
+      ],
+      [
+        "seal",
+        "Saudi Bar Association membership —",
+        "Membership number pending publication approval"
+      ],
+      [
+        "seal",
+        "Notarial practice licence —",
+        "Details pending publication approval"
+      ],
+      [
+        "home",
+        "Real estate registrar licence —",
+        "Details pending publication approval"
+      ]
+    ],
+    "formEyebrow": "Begin a conversation",
+    "formH": "A considered conversation starts here.",
+    "formLede": "Introduce your matter in a few words. Add your contact details and select the relevant area, then review your message in WhatsApp before sending.",
+    "fName": "Your full name",
+    "fMobile": "Contact mobile",
+    "fEmail": "Your email (not required)",
+    "fService": "Area of concern",
+    "fDetails": "What would you like to discuss?",
+    "fConsent": "I consent to the firm storing this request and transferring its details to WhatsApp to discuss my enquiry.",
+    "fSubmit": "Review message in WhatsApp",
+    "fPick": "Select a relevant area",
+    "fNote": "The firm saves your request, then opens WhatsApp for you to review and send the message yourself. An enquiry does not establish a lawyer–client relationship.",
+    "eName": "Please add your full name to continue.",
+    "eMobile": "Use a valid Saudi mobile beginning with 05 or +9665.",
+    "eEmail": "Check the email format, or leave this field empty.",
+    "eService": "Select the area relevant to your matter.",
+    "eConsent": "Consent to storage and WhatsApp transfer is needed to continue.",
+    "ok": "Your message is ready to review in WhatsApp. If the conversation does not appear, open the link below.",
+    "no": "We could not complete this step. Try again or use another contact method below.",
+    "contactEyebrow": "Speak with the firm",
+    "contactH": "Let us hear what matters to you.",
+    "rowPhone": "Call the office",
+    "rowWhats": "A conversation on WhatsApp",
+    "rowEmail": "Email correspondence",
+    "rowLocation": "Find your way to the office",
+    "rowHours": "Office contact hours",
+    "hours": "Sunday–Thursday, 9am–5pm",
+    "copy": "Copy number",
+    "copied": "Number copied",
+    "footTag": "Mohammed Al Sabaan Law Firm & Legal Consultancy. Considered counsel. Care for what you entrust to us.",
+    "footCol1": "Areas of expertise",
+    "footCol2": "Speak with us",
+    "footCol3": "Visit the office",
+    "legal": "© 2026 Mohammed Al Sabaan Law Firm & Legal Consultancy. Copyright reserved.",
+    "disclaimer": "This content introduces our services and is not advice on any particular matter. An initial enquiry does not establish a lawyer–client relationship.",
+    "mbarWhats": "Discuss your matter",
+    "mbarCall": "Call the office",
+    "waText": "Hello, I would like to discuss a legal matter with Mohammed Al Sabaan Law Firm.",
+    "mapOpen": "Plan your visit with Google Maps",
+    "videoPause": "Pause the office film",
+    "videoPlay": "Resume the office film"
+  }
+};
 
 /* ===== brand mark: fanned leaves of hairlines ===== */
 document.querySelectorAll('[data-mark]').forEach(function(el){
@@ -831,7 +1181,7 @@ function buildLists(){
 function escapeText(value){return String(value).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
 function buildContact(){
   var pending=L==='ar'?'تُضاف بيانات التواصل الرسمية قريبًا':'Official contact details will be added soon';
-  var rows=[['mail',t.rowEmail,CONTACT.email||(L==='ar'?'يُضاف قريبًا':'Coming soon'),CONTACT.email?'mailto:'+CONTACT.email:'',CONTACT.email?1:0],['pin',t.rowLocation,L==='ar'?CONTACT.addrAr:CONTACT.addrEn,CONTACT.mapsUrl,0],['clock',t.rowHours,t.hours,'',0]];
+  var rows=[['mail',t.rowEmail,CONTACT.email||(L==='ar'?'البريد قيد الاعتماد للنشر':'Email details pending publication'),CONTACT.email?'mailto:'+CONTACT.email:'',CONTACT.email?1:0],['pin',t.rowLocation,L==='ar'?CONTACT.addrAr:CONTACT.addrEn,CONTACT.mapsUrl,0],['clock',t.rowHours,t.hours,'',0]];
   if(CONTACT.whatsRaw)rows.unshift(['phone',t.rowPhone,CONTACT.phoneIntl,'tel:+'+CONTACT.whatsRaw,1],['whats',t.rowWhats,CONTACT.whatsIntl,waLink(),1]);
   $('#contactRows').innerHTML=rows.map(function(r){
     r[2]=escapeText(r[2]);
@@ -880,7 +1230,7 @@ function render(){
   r.style.setProperty('--cue-origin', t.dir==='rtl'?'right':'left');
   $$('[data-i]').forEach(function(el){ var v=t[el.dataset.i]; if(typeof v==='string') el.textContent=v; });
   $('[data-i="heroH"]').innerHTML=L==='ar'?'حين تتعقّد المسائل،<br>يبدأ <span class="hero-accent">الوضوح.</span>':'When matters get complex,<br><span class="hero-accent">clarity begins.</span>';
-  $('#audience-title').textContent=L==='ar'?'كيف يمكننا مساعدتك؟':'How can we help you?';
+  $('#audience-title').textContent=L==='ar'?'ما الذي تودّ أن تعهد به إلينا؟':'What would you like to entrust to us?';
   $('.audience-tabs').setAttribute('aria-label',L==='ar'?'نوع الخدمات':'Who we help');
   $('#lang').textContent=t.langBtn;
   $('.menu-language').textContent=t.langBtn;
@@ -1077,7 +1427,7 @@ $('#form').addEventListener('submit',function(e){
 
   if(!ok){ if(first) $(first).focus(); return }
 
-  if(!CONTACT.whatsRaw){msgEl.hidden=false;msgEl.textContent=L==='ar'?'التواصل غير متاح مؤقتًا.':'Contact is temporarily unavailable.';return}
+  if(!CONTACT.whatsRaw){msgEl.hidden=false;msgEl.textContent=L==='ar'?'لا يمكن فتح المحادثة حالياً. استخدم بيانات التواصل أدناه.':'The conversation cannot be opened right now. Please use the contact details below.';return}
   var details=[t.fName+': '+name,t.fMobile+': '+mob,mail?t.fEmail+': '+mail:'',$('#f-details').value.trim()].filter(Boolean).join('\n');
   var url=waLink(svc,details);
   submitEnquiry({source:'form',service:svc,name:name,mobile:mob,email:mail,details:$('#f-details').value.trim(),consent:true},url);
@@ -1127,19 +1477,19 @@ function statusMessage(message,url){
   var dismiss=document.createElement('button');dismiss.type='button';dismiss.className='status-dismiss';dismiss.textContent='×';
   dismiss.setAttribute('aria-label',L==='ar'?'إغلاق الرسالة':'Dismiss message');
   dismiss.onclick=function(){el.hidden=true};el.appendChild(dismiss);
-  if(url){var a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener noreferrer';a.textContent=L==='ar'?'افتح واتساب':'Open WhatsApp';el.appendChild(a)}
+  if(url){var a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener noreferrer';a.textContent=L==='ar'?'انتقل إلى رسالتك':'Open your message';el.appendChild(a)}
 }
 function submitEnquiry(fields,url){
   if(enquiryBusy)return;
-  if(!hostNonce){statusMessage(L==='ar'?'يرجى الانتظار حتى اكتمال الاتصال ثم إعادة المحاولة.':'Please wait for the connection and try again.');return}
+  if(!hostNonce){statusMessage(L==='ar'?'لم يكتمل الاتصال بعد. انتظر لحظة، ثم أعد المحاولة.':'The connection is not ready yet. Please wait a moment and try again.');return}
   enquiryBusy=true;
   var popup=window.open('about:blank','_blank');if(popup)popup.opener=null;
-  statusMessage(L==='ar'?'جارٍ حفظ طلبك…':'Saving your request…');
+  statusMessage(L==='ar'?'نعمل على حفظ بيانات طلبك…':'Preparing your enquiry…');
   eventQueue.push({event:{kind:'request',id:crypto.randomUUID(),language:L,...fields},done:function(receipt){
     enquiryBusy=false;
-    if(!receipt.ok){if(popup)popup.close();statusMessage(L==='ar'?'تعذر حفظ الطلب. راجع التفاصيل وأعد المحاولة.':'Unable to save the request. Check your details and try again.');return}
+    if(!receipt.ok){if(popup)popup.close();statusMessage(L==='ar'?'لم نتمكّن من حفظ الطلب. حاول مجدداً قبل متابعة المحادثة.':'Your enquiry could not be saved. Please try again before continuing the conversation.');return}
     if(!ovl.hidden)closeSheet();
-    statusMessage(L==='ar'?'تم حفظ الطلب. تابع المحادثة في واتساب.':'Request saved. Continue the conversation in WhatsApp.',url);
+    statusMessage(L==='ar'?'حُفظ طلبك لدى المكتب. راجع رسالتك في واتساب وأرسلها متى كنت مستعداً.':'Your enquiry has been saved. Review your WhatsApp message and send it when you are ready.',url);
     if(popup&&!popup.closed)popup.location.href=url;
   }});
   sendNext();
