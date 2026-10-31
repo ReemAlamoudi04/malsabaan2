@@ -451,7 +451,7 @@ h1,h2,h3{font-family:var(--display);font-weight:600;margin:0;text-wrap:balance;l
   <!-- AUDIENCE EXPLORER: one place, two ways to explore -->
   <section class="audience-explorer band" id="audience" aria-labelledby="audience-title">
     <div class="wrap">
-      <div class="audience-heading"><h2 class="h-sec" id="audience-title">ما الذي تودّ أن تعهد به إلينا؟</h2>
+      <div class="audience-heading"><h2 class="h-sec" id="audience-title">عناية قانونية لأعمالك وشؤونك.</h2>
         <div class="audience-tabs" role="tablist" aria-label="نوع الخدمات">
           <button type="button" role="tab" id="tab-corporate" aria-controls="corporate" aria-selected="true" tabindex="0" data-audience="corporate" data-i="corpLabel"></button>
           <button type="button" role="tab" id="tab-individuals" aria-controls="individuals" aria-selected="false" tabindex="-1" data-audience="individuals" data-i="indLabel"></button>
@@ -1230,7 +1230,7 @@ function render(){
   r.style.setProperty('--cue-origin', t.dir==='rtl'?'right':'left');
   $$('[data-i]').forEach(function(el){ var v=t[el.dataset.i]; if(typeof v==='string') el.textContent=v; });
   $('[data-i="heroH"]').innerHTML=L==='ar'?'حين تتعقّد المسائل،<br>يبدأ <span class="hero-accent">الوضوح.</span>':'When matters get complex,<br><span class="hero-accent">clarity begins.</span>';
-  $('#audience-title').textContent=L==='ar'?'ما الذي تودّ أن تعهد به إلينا؟':'What would you like to entrust to us?';
+  $('#audience-title').textContent=L==='ar'?'عناية قانونية لأعمالك وشؤونك.':'Legal care for business and personal matters.';
   $('.audience-tabs').setAttribute('aria-label',L==='ar'?'نوع الخدمات':'Who we help');
   $('#lang').textContent=t.langBtn;
   $('.menu-language').textContent=t.langBtn;

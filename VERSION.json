@@ -16,7 +16,7 @@
     "requirements.txt": "03ab59d623b3a16f80ac0067dd9a75865704cd32e82f26884d5469bd7aad9bdd",
     "secrets.example.toml": "6678bb184ec22d6cbd964b217056e47cee03f6d6fa5fb3ea8b82c86c72e28099",
     "storage.py": "9f7bf43883c4da4d0815b5079b39a4f452e6855ed27798a79b773c8b8fcf0b8c",
-    "website/alternative.css": "af5180f5b17a393685ca2e2fe5c6ec59c921aa928e6052fc593c6a86a5266d4d",
+    "website/alternative.css": "cd1207ed01cdedf68297a8c799c1da3c0069bfa1c8f8bed95d1903c71be2239f",
     "website/assets/hero.mp4": "868264a81cbf0026bddf40307ffc2880012208f927283bb67c39fc8c3b451234",
     "website/assets/legal-details.jpg": "259caf349693eb10fadb8d3d26b78a0c2c697bfdbba413dca4de9846fe1fb587",
     "website/assets/logo-full.png": "deeea5b9d93fd0dcbc1ce942180bf02b441824c8769b3320ecff8ce752cf6bb6",
@@ -25,8 +25,9 @@
     "website/assets/office-desk.jpg": "01b34089435ec3f214c3316a20487f1aeb52d0a823b2bb47d21ee3f07e63781d",
     "website/assets/reception.jpg": "53f8370fbdcbfb3c0383d3ac54bab70fd453e3e8f8dd488387d8ddfa08b2bbcb",
     "website/contact-config.js": "f1e23c0635851e483de7214db4bea01f8da4fb8c2a608ab822a6688d779f298a",
-    "website/index.html": "772fe314f2ba226fd39c1be2a75645c34a21e06c31cc43bfd62846894dfd491e",
+    "website/index.html": "ffee0067bac76ebd50f78b8026c207c14700ea9e1f84240627cad642bb2c979d",
     "website/theme.css": "660801b872628e5eef843b1b7b8054d1831a3d0ed8fc3493d43b389146919ccb"
   },
-  "copy_revision": "2026-10-31: bilingual editorial rewrite; headline and vision preserved"
+  "copy_revision": "2026-10-31: bilingual editorial rewrite; headline and vision preserved",
+  "visual_revision": "2026-10-31: deep navy theme, full-viewport background hero video, revised audience heading"
 }
